@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('../images/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#audio {
+  display: none;
+}
+
+.music-control {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.audio-track {
+  width: 500px;
+  height: 5px;
+  background-color: rgba(217, 216, 216, 0.3);
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.time {
+  width: 0;
+  height: 5px;
+  background-color: #41969b;
+  border-radius: 5px;
+  display: inline-block;
+  position: absolute;
+}
+
+.time::after {
+  content: ' ';
+  width: 10px;
+  height: 10px;
+  background-color: #6ec5c9;
+  display: block;
+  border-radius: 100%;
+  right: 0;
+  position: absolute;
+  transform: translate(50%, -3px);
+}
+
+.button-group {
+  width: 200px;
+  padding-inline: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin: auto;
+}
+
+.btn {
+  font-size: 26px;
+  color: rgb(172, 172, 172);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn.play,
+.btn.pause {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.hidden {
+  display: none;
+}
