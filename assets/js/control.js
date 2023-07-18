@@ -1,4 +1,4 @@
-let playlist = ['music(1).mp3', 'music(2).mp3', 'music(3).mp3']
+let playlist = ['music(1).mp3', 'music(2).mp3', 'music(3).mp3', 'music(4).mp3']
 
 let treck
 window.onload = function () {
